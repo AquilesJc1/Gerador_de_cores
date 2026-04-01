@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de cores</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 id="titulo">Gerador de cores</h1>
+
+    <div class="gerarCores">
+        <div id="cor"></div>
+
+        <input type="range" id="vermelho" value="0" min="0" max="255" onchange="mudarCor('vermelho')">
+        <input type="range" id="verde" value="0" min="0" max="255" onchange="mudarCor('verde')">
+        <input type="range" id="azul" value="0" min="0" max="255" onchange="mudarCor('azul')">
+
+        <button onclick="guardarCor()" id="btn-guardar">Guardar cor</button>
+    </div>
+
+    <div class="paleta"></div>
+
+    <div class="aquiles"><p>Aquiles Jacinto</p></div>
+
+    <div class="ver"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

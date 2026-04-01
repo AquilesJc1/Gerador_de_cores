@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-weight: 300; */
+}
+
+body{
+    padding: 10px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100dvh;
+    width: 100vw;
+}
+
+#titulo{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    height: 50px;
+}
+
+.gerarCores{
+    background-color: #fff;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 10px #bdbdbd;
+}
+
+.gerarCores #cor{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+.gerarCores button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-family: "inter", sans-serif;
+    color: white;
+    background-color: cornflowerblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.gerarCores button:hover{
+    background-color: rgb(49, 119, 248);
+}
+
+.aquiles{
+    height: 20px;
+}
+
+.aquiles p{
+    font-family: "inter", sans-serif;
+}
+
+#vermelho{
+    background: rgba(255, 0, 0, 0.291);
+}
+
+#verde{
+    background: rgba(0, 177, 0, 0.291);
+}
+
+#azul{
+    background: rgba(0, 0, 255, 0.291);
+}
+
+.paleta{
+    width: max-content;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px #888;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.paleta .cor{
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.ver {
+    display: none;
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+    position: fixed;
+    font-family: "inter", sans-serif;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px #888;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* remove estilo padrão */
+    height: 8px;
+    border-radius: 5px;
+}
